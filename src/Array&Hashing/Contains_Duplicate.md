@@ -23,9 +23,9 @@ Output: false
 
 
 # Intuition
-The initial instinct was to directly check adjacent elements for duplicates, but since the array might be unsorted, this approach could be inefficient. Sorting the array first would make duplicates adjacent, but sorting adds a time complexity of $$O(nlogn)$$.
+The initial instinct was to directly check adjacent elements for duplicates, but since the array might be unsorted, this approach could be inefficient. Sorting the array first would make duplicates adjacent, but sorting adds a time complexity of O(nlogn).
 
-So, the more efficient approach involves utilizing a set data structure. While iterating through the array, each element is added to the set. If a duplicate is encountered (i.e., if an element already exists in the set), True is returned. If the iteration completes without finding any duplicates, False is returned. This approach has a time complexity of $$O(n) $$.
+So, the more efficient approach involves utilizing a set data structure. While iterating through the array, each element is added to the set. If a duplicate is encountered (i.e., if an element already exists in the set), True is returned. If the iteration completes without finding any duplicates, False is returned. This approach has a time complexity of O(n).
 
 # Approach
 
@@ -46,17 +46,17 @@ Using set data structure
 
 By sorting
 - Time complexity:
-$$O(nlogn)$$ for sorting the array and then iterating through the sorted array takes $$O(n)$$.
+O(nlogn) for sorting the array and then iterating through the sorted array takes O(n).
 
 - Space complexity:
-$$O(1)$$ Sorting operation is done in-place and no additional space required.
+O(1) Sorting operation is done in-place and no additional space required.
 
 Using set data structure
 - Time complexity:
-$$O(n)$$ The loop iterates through each element once, and set operations like checking membership and adding elements are typically $$O(1)$$ on average.
+O(n) The loop iterates through each element once, and set operations like checking membership and adding elements are typically O(1) on average.
 
 - Space complexity:
-$$O(n)$$ The set will store at most n unique elements.
+O(n) The set will store at most n unique elements.
 
 
 # Code

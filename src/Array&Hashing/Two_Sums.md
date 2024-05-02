@@ -29,11 +29,7 @@ Only one valid answer exists.
 
 
 # Intuition
-The initial instinct was to directly sort both strings and check for mismatches in characters based on their index values. So, the initial steps involved checking the lengths of both strings, sorting them, and then comparing them character by character, resulting in a time complexity of O(nlogn).
-
-However, to avoid the unnecessary sorting of the two strings, a more efficient approach was devised. This approach involves counting the frequency of each character in one string and then decrementing the count based on the corresponding character frequency in the other string. In a valid anagram, this process will yield counts of zero for all characters. Any non-zero count indicates the presence of an invalid character, thus identifying an invalid anagram. This optimized method operates in linear time, O(n).
-
-So, instead of sorting, we utilize character frequency counts to efficiently determine if two strings are anagrams of each other.
+This approach involves the traversing through each number in the input list, storing each number's index in a dictionary. As it traverses, it calculates the complement required to achieve the target sum by subtracting the current number from the target. If the complement is found in the dictionary, it indicates that a pair of numbers exists in the list whose sum equals the target. In this case, the algorithm returns the indices of both the current number and its complement from the dictionary, providing the positions of the two numbers that sum up to the target. 
 
 # Approach
 

@@ -43,10 +43,9 @@ By sorting
 By finding frequency of each character
 1. Compare the lengths of the two input strings, s and t. If they have different lengths, return False immediately, indicating that they cannot be anagrams.
 2. Initialise a dictionary to keep track of the frequency of each character in the first string, s.
-3. Run a loop through the second string and decreement the frequency of each character.
-4. Iterate through each character in the second string, t, and decrement the corresponding character frequency in the dictionary.
-5. After iterating through all characters in t, if the frequency of all characters in the dictionary becomes zero, it indicates that t contains exactly the same characters as s, albeit possibly in a different order, making them anagrams. In this case, return True.
-6. If during the iteration, the frequency of any character becomes zero, it means t contains a character that is not present in s or contains the character more times than in s, which breaks the anagram condition. In such a scenario, return False.
+3. Iterate through each character in the second string, t, and decrement the corresponding character frequency in the dictionary.
+4. After iterating through all characters in t, if the frequency of all characters in the dictionary becomes zero, it indicates that t contains exactly the same characters as s, albeit possibly in a different order, making them anagrams. In this case, return True.
+5. If during the iteration, the frequency of any character becomes zero, it means t contains a character that is not present in s or contains the character more times than in s, which breaks the anagram condition. In such a scenario, return False.
 
 # Complexity
 

@@ -1,1 +1,1 @@
-# blind-75-leetcode
+# leetcode problems

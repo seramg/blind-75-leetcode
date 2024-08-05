@@ -17,8 +17,6 @@ class Solution(object):
         return totalAnagramList
 
 
-
-
 strs = ["eat","tea","tan","ate","nat","bat"]
 solution = Solution()
 result = solution.groupAnagrams(strs)
